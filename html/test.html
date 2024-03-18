@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Estilo para dispositivos móveis */
+      @media only screen and (max-width: 600px) {
+        .mobile-warning {
+          display: block;
+        }
+        main {
+          display: none;
+        }
+      }
+
+      /* Estilo para outros dispositivos */
+      @media only screen and (min-width: 601px) {
+        .mobile-warning {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="temp-message" class="temp-message">
+      <p class="mobile-warning">
+        Esta página não pode ser visualizada em dispositivos móveis. Por favor,
+        utilize um notebook ou desktop.
+      </p>
+    </div>
+
+    <main>
+      <section class="first-section">
+        <div class="image-container"></div>
+        <div class="circle blue-circle"></div>
+        <div class="circle white-circle"></div>
+      </section>
+      <section class="second-section">
+        <form action="">
+          <div>
+            <h1>Bem vindo à Jornada do Usuário</h1>
+            <p>Entre para continuar a jornada</p>
+          </div>
+          <input type="text" placeholder="e-mail" />
+          <input type="password" placeholder="senha" />
+          <button>Login</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
