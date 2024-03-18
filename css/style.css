@@ -1,0 +1,213 @@
+:root {
+  --main-bg-color: #dad4d4;
+  --main-text-color: #272b73;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 20px;
+  }
+
+  main {
+    display: none;
+  }
+
+  .mobile-warning {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .first-section {
+    width: 60%;
+  }
+
+  .second-section {
+    width: 40%;
+  }
+
+  input,
+  button {
+    width: 70%;
+  }
+
+  form {
+    width: 80%;
+    height: 70%;
+  }
+
+  h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 2.5em;
+    color: #272b73;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  p {
+    font-family: "Arial", sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .temp-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #272b73;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+  }
+
+  .image-container {
+    width: 40%;
+    padding-right: 20px; /* Adiciona espaço à direita da imagem */
+    box-sizing: border-box; /* Garante que o padding não altere a largura total */
+  }
+
+  .image-container img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+}
+
+.first-section {
+  width: 60%;
+}
+
+.second-section {
+  width: 40%;
+}
+
+input,
+button {
+  width: 70%;
+}
+
+form {
+  width: 80%;
+  height: 70%;
+}
+
+h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 2.5em;
+  color: #272b73;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 1.2em;
+  color: #555;
+  text-align: center;
+}
+
+#temp-message {
+  display: none;
+  position: fixed;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+main {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-section {
+  position: relative;
+  overflow: hidden;
+  width: 60vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: linear-gradient(#5a60cf, #394690, #0c0f4b);
+}
+
+.second-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40vw;
+  height: 100vh;
+  background-color: #dad4d4;
+}
+
+input {
+  border-radius: 10px;
+  border-style: none;
+  width: 25vw;
+  height: 40px;
+  font-size: 18px;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+button {
+  border-style: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #272b73;
+  color: #dad4d4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 400px;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
+.blue-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-20%, 50%);
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  border: 1.5px solid #5962db;
+  border-radius: 100%;
+}
+
+.white-circle {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  transform: translate(-45%, 40%);
+  width: 500px;
+  height: 500px;
+  border: 1.5px solid aliceblue;
+  border-radius: 100%;
+}
