@@ -19,6 +19,10 @@ body {
   align-items: center;
 }
 
+.navbar .bi {
+  margin-right: 1vw;
+}
+
 .navbar a {
   display: flex;
   color: #0f113b;
@@ -29,11 +33,14 @@ body {
   background-color: #dad4d4;
   border-radius: 10px;
   width: 160px;
+  height: 30px;
+  align-items: center;
 }
 
 .navbar a:hover {
   background-color: #394690;
   color: #dad4d4;
+  border: 1px #dad4d4 solid;
 }
 
 .content {
