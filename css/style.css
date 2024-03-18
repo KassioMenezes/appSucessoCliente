@@ -49,14 +49,14 @@
     font-size: 2.5em;
     color: #272b73;
     margin-bottom: 20px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
   }
 
   p {
     font-family: "Arial", sans-serif;
     font-size: 1.2em;
     color: #555;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
   }
 
   .temp-message {
@@ -69,17 +69,6 @@
     padding: 10px 20px;
     border-radius: 5px;
     display: none;
-  }
-
-  .image-container {
-    width: 40%;
-    padding-right: 20px; /* Adiciona espaço à direita da imagem */
-    box-sizing: border-box; /* Garante que o padding não altere a largura total */
-  }
-
-  .image-container img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
-    height: auto; /* Mantém a proporção da imagem */
   }
 }
 
